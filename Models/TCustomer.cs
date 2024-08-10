@@ -10,7 +10,7 @@ public class TCustomer
 
     public TContactInfo ContactInfo { get; set; } 
 
-    public decimal CurrentBalance { get; set; } = 0.0m; 
+    public decimal CurrentBalance { get; set; } 
 
     // Transactions
     public ICollection<TTransactions> Transactions { get; set; }

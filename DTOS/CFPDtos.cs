@@ -22,17 +22,16 @@ public class ContactInfoDto
 
 public class TransactionDto
 {
-    public DateTime TransactionDate { get; set; }
-
-    public string TransactionType { get; set; }
-
     public string UniqueNumber { get; set; }
-
-    public decimal Amount { get; set; }
-
+    
+    public DateTime TransactionDate { get; set; }
+    
+    public string Remarks { get; set; }
+    
     public decimal? Debit { get; set; }
 
     public decimal? Credit { get; set; }
 
     public decimal Balance { get; set; }
+    public string TransactionType { get; set; }
 }

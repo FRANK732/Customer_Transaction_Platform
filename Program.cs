@@ -16,10 +16,11 @@ builder.Services.AddDbContext<DbCTPContest>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("server")));
 
 //Service Extensions
-builder.Services.AddCFPServices();
+builder.Services.AddCfpServices();
 
 //Repo Registrattions
 builder.Services.AddScoped<ICustomerRepo, CustomerRepo>();
+builder.Services.AddScoped<ITransactionRepo, TransactionRepo>();
 // builder.Services.AddScoped<IContactRepo, ContactRepo>();
 
 var app = builder.Build();

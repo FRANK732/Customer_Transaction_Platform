@@ -11,10 +11,10 @@ public class DbCTPContest : DbContext
     }
 
     // DbSet for Customers
-    public DbSet<TCustomer> Customers { get; set; }
+    public DbSet<TCustomer?> Customers { get; set; }
 
     // DbSet for Transactions
-    public DbSet<TTransactions> Transactions { get; set; }
+    public DbSet<TTransactions?> Transactions { get; set; }
     
     public DbSet<TContactInfo> ContactInfos { get; set; }
 
