@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Customer_Balance_Paltform.Migrations
 {
     /// <inheritdoc />
-    public partial class InitialCreate : Migration
+    public partial class newCreate : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -60,7 +60,8 @@ namespace Customer_Balance_Paltform.Migrations
                     Amount = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
                     Debit = table.Column<decimal>(type: "decimal(18,2)", nullable: true),
                     Credit = table.Column<decimal>(type: "decimal(18,2)", nullable: true),
-                    Balance = table.Column<decimal>(type: "decimal(18,2)", nullable: false)
+                    Balance = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
+                    Remarks = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {

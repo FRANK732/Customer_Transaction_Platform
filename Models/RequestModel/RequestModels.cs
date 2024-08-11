@@ -25,8 +25,7 @@ public class ContactInfo
 public class Transaction
 {
     public int CustomerId { get; set; }
-    public DateTime TransactionDate { get; set; }
-
+    public string? Remarks { get; set; }
     public TransactionType TransactionType { get; set; }
 
     public decimal Amount { get; set; }

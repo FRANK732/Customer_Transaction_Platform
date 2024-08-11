@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Customer_Balance_Paltform.Migrations
 {
     [DbContext(typeof(DbCTPContest))]
-    [Migration("20240809155045_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20240811075319_newCreate")]
+    partial class newCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -98,6 +98,10 @@ namespace Customer_Balance_Paltform.Migrations
 
                     b.Property<decimal?>("Debit")
                         .HasColumnType("decimal(18,2)");
+
+                    b.Property<string>("Remarks")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("TransactionDate")
                         .HasColumnType("datetime2");

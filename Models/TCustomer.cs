@@ -1,4 +1,6 @@
-﻿namespace Customer_Balance_Paltform.Models;
+﻿using System.Text.Json.Serialization;
+
+namespace Customer_Balance_Paltform.Models;
 
 public class TCustomer
 {
@@ -13,6 +15,7 @@ public class TCustomer
     public decimal CurrentBalance { get; set; } 
 
     // Transactions
+    [JsonIgnore]
     public ICollection<TTransactions> Transactions { get; set; }
 }
 

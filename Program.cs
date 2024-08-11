@@ -7,6 +7,18 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
+//CORS
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("CTP_Clcient",
+        builder =>
+        {
+            builder.WithOrigins("http://localhost:3000")
+                .AllowAnyHeader()
+                .AllowAnyMethod();
+        });
+});
+
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -31,6 +43,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+app.UseCors("CTP_Clcient");
 
 app.UseHttpsRedirection();
 

@@ -87,14 +87,25 @@ namespace Customer_Balance_Paltform.Migrations
                     b.Property<decimal>("Balance")
                         .HasColumnType("decimal(18,2)");
 
+                    b.Property<decimal?>("Credit")
+                        .HasColumnType("decimal(18,2)");
+
                     b.Property<int>("CustomerID")
                         .HasColumnType("int");
+
+                    b.Property<decimal?>("Debit")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<string>("Remarks")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("TransactionDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("TransactionType")
-                        .HasColumnType("int");
+                    b.Property<string>("TransactionType")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("UniqueNumber")
                         .IsRequired()

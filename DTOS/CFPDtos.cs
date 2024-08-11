@@ -22,6 +22,7 @@ public class ContactInfoDto
 
 public class TransactionDto
 {
+    public int TransactionID { get; set; }
     public string UniqueNumber { get; set; }
     
     public DateTime TransactionDate { get; set; }

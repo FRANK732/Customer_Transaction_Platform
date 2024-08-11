@@ -63,14 +63,12 @@ public class TransactionRepo : ITransactionRepo
 
         // Applying date range filtering
         if (startDate.HasValue)
-        {
             transactionsQuery = transactionsQuery.Where(t => t.TransactionDate >= startDate.Value);
-        }
+        
 
         if (endDate.HasValue)
-        {
             transactionsQuery = transactionsQuery.Where(t => t.TransactionDate <= endDate.Value);
-        }
+        
 
         if (!startDate.HasValue && !endDate.HasValue) 
             transactionsQuery = transactionsQuery.Where(t => t.TransactionDate <= DateTime.Now);
@@ -123,7 +121,7 @@ public class TransactionRepo : ITransactionRepo
                 transaction.Balance = balance;
             }
 
-            customer.CurrentBalance = balance;
+            customer.CurrentBalance += balance;
 
             _context.Transactions.UpdateRange(transactions);
             

@@ -1,4 +1,6 @@
-﻿namespace Customer_Balance_Paltform.Models;
+﻿using System.Text.Json.Serialization;
+
+namespace Customer_Balance_Paltform.Models;
 
 public class TTransactions
 {
@@ -6,9 +8,9 @@ public class TTransactions
 
     public int CustomerID { get; set; } // FKey 
 
-    public DateTime TransactionDate { get; set; } 
+    public DateTime TransactionDate { get; set; }= DateTime.Now;
 
-    public string  TransactionType { get; set; }
+    public string TransactionType { get; set; } 
 
     public string UniqueNumber { get; set; } = RandomNumber(10000, 99999).ToString();
 
@@ -19,8 +21,11 @@ public class TTransactions
     public decimal? Credit { get; set; }
 
     public decimal Balance { get; set; } 
+    public string Remarks { get; set; } 
+    
 
     // Customer
+    [JsonIgnore]
     public TCustomer Customer { get; set; }
     
     static int RandomNumber(int min, int max)
