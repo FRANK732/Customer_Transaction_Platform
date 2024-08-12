@@ -8,7 +8,7 @@ public class TTransactions
 
     public int CustomerID { get; set; } // FKey 
 
-    public DateTime TransactionDate { get; set; }= DateTime.Now;
+    public DateTime? TransactionDate { get; set; }= DateTime.Now;
 
     public string TransactionType { get; set; } 
 

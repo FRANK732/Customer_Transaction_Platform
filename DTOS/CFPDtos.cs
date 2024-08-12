@@ -35,4 +35,5 @@ public class TransactionDto
 
     public decimal Balance { get; set; }
     public string TransactionType { get; set; }
+    
 }
