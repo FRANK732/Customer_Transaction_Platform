@@ -84,11 +84,11 @@ public class CFPContrller : ControllerBase
 
     
     
-    [HttpPut("{id}")]
-    public async Task<IActionResult> UpdateCustomer(int id, Customer rCustomer)
+    [HttpPut]
+    public async Task<IActionResult> UpdateCustomer(int customerid, UpdateCustomer rCustomer)
     {
         var customer = _mapper.Map<TCustomer>(rCustomer);
-        var res = await _repo.UpdateCustomerAsync(customer);
+        var res = await _repo.UpdateCustomerAsync(customerid,customer);
         return res? Ok(res) : NotFound(res);
     }
 

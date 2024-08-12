@@ -1,7 +1,36 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\frank.addae\\RiderProjects\\Customer_Balance_Paltform\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A04DF29F-2D72-480B-87A6-930DAE29098E}|Customer_Balance_Paltform.csproj|c:\\users\\frank.addae\\riderprojects\\customer_balance_paltform\\repositories\\transactionrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A04DF29F-2D72-480B-87A6-930DAE29098E}|Customer_Balance_Paltform.csproj|solutionrelative:repositories\\transactionrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A04DF29F-2D72-480B-87A6-930DAE29098E}|Customer_Balance_Paltform.csproj|c:\\users\\frank.addae\\riderprojects\\customer_balance_paltform\\repositories\\customerrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A04DF29F-2D72-480B-87A6-930DAE29098E}|Customer_Balance_Paltform.csproj|solutionrelative:repositories\\customerrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A04DF29F-2D72-480B-87A6-930DAE29098E}|Customer_Balance_Paltform.csproj|c:\\users\\frank.addae\\riderprojects\\customer_balance_paltform\\mappers\\cfpmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A04DF29F-2D72-480B-87A6-930DAE29098E}|Customer_Balance_Paltform.csproj|solutionrelative:mappers\\cfpmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A04DF29F-2D72-480B-87A6-930DAE29098E}|Customer_Balance_Paltform.csproj|c:\\users\\frank.addae\\riderprojects\\customer_balance_paltform\\models\\requestmodel\\requestmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A04DF29F-2D72-480B-87A6-930DAE29098E}|Customer_Balance_Paltform.csproj|solutionrelative:models\\requestmodel\\requestmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A04DF29F-2D72-480B-87A6-930DAE29098E}|Customer_Balance_Paltform.csproj|c:\\users\\frank.addae\\riderprojects\\customer_balance_paltform\\controllers\\cfpcontrller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A04DF29F-2D72-480B-87A6-930DAE29098E}|Customer_Balance_Paltform.csproj|solutionrelative:controllers\\cfpcontrller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A04DF29F-2D72-480B-87A6-930DAE29098E}|Customer_Balance_Paltform.csproj|c:\\users\\frank.addae\\riderprojects\\customer_balance_paltform\\repositories\\interfaces\\itransactionrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A04DF29F-2D72-480B-87A6-930DAE29098E}|Customer_Balance_Paltform.csproj|solutionrelative:repositories\\interfaces\\itransactionrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A04DF29F-2D72-480B-87A6-930DAE29098E}|Customer_Balance_Paltform.csproj|c:\\users\\frank.addae\\riderprojects\\customer_balance_paltform\\repositories\\interfaces\\icontactrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A04DF29F-2D72-480B-87A6-930DAE29098E}|Customer_Balance_Paltform.csproj|solutionrelative:repositories\\interfaces\\icontactrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +38,98 @@
       "DocumentGroups": [
         {
           "DockedWidth": 240,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CustomerRepo.cs",
+              "DocumentMoniker": "C:\\Users\\frank.addae\\RiderProjects\\Customer_Balance_Paltform\\Repositories\\CustomerRepo.cs",
+              "RelativeDocumentMoniker": "Repositories\\CustomerRepo.cs",
+              "ToolTip": "C:\\Users\\frank.addae\\RiderProjects\\Customer_Balance_Paltform\\Repositories\\CustomerRepo.cs",
+              "RelativeToolTip": "Repositories\\CustomerRepo.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAxwBMAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T16:13:27.348Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CFPMapper.cs",
+              "DocumentMoniker": "C:\\Users\\frank.addae\\RiderProjects\\Customer_Balance_Paltform\\Mappers\\CFPMapper.cs",
+              "RelativeDocumentMoniker": "Mappers\\CFPMapper.cs",
+              "ToolTip": "C:\\Users\\frank.addae\\RiderProjects\\Customer_Balance_Paltform\\Mappers\\CFPMapper.cs",
+              "RelativeToolTip": "Mappers\\CFPMapper.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T16:12:42.446Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RequestModels.cs",
+              "DocumentMoniker": "C:\\Users\\frank.addae\\RiderProjects\\Customer_Balance_Paltform\\Models\\RequestModel\\RequestModels.cs",
+              "RelativeDocumentMoniker": "Models\\RequestModel\\RequestModels.cs",
+              "ToolTip": "C:\\Users\\frank.addae\\RiderProjects\\Customer_Balance_Paltform\\Models\\RequestModel\\RequestModels.cs",
+              "RelativeToolTip": "Models\\RequestModel\\RequestModels.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAewCkAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T16:09:05.449Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CFPContrller.cs",
+              "DocumentMoniker": "C:\\Users\\frank.addae\\RiderProjects\\Customer_Balance_Paltform\\Controllers\\CFPContrller.cs",
+              "RelativeDocumentMoniker": "Controllers\\CFPContrller.cs",
+              "ToolTip": "C:\\Users\\frank.addae\\RiderProjects\\Customer_Balance_Paltform\\Controllers\\CFPContrller.cs",
+              "RelativeToolTip": "Controllers\\CFPContrller.cs",
+              "ViewState": "AQIAADYAAAAAAAAAAAD4v0QAAABNAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T15:21:00.411Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TransactionRepo.cs",
+              "DocumentMoniker": "C:\\Users\\frank.addae\\RiderProjects\\Customer_Balance_Paltform\\Repositories\\TransactionRepo.cs",
+              "RelativeDocumentMoniker": "Repositories\\TransactionRepo.cs",
+              "ToolTip": "C:\\Users\\frank.addae\\RiderProjects\\Customer_Balance_Paltform\\Repositories\\TransactionRepo.cs",
+              "RelativeToolTip": "Repositories\\TransactionRepo.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAF4AAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T11:54:50.48Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ITransactionRepo.cs",
+              "DocumentMoniker": "C:\\Users\\frank.addae\\RiderProjects\\Customer_Balance_Paltform\\Repositories\\Interfaces\\ITransactionRepo.cs",
+              "RelativeDocumentMoniker": "Repositories\\Interfaces\\ITransactionRepo.cs",
+              "ToolTip": "C:\\Users\\frank.addae\\RiderProjects\\Customer_Balance_Paltform\\Repositories\\Interfaces\\ITransactionRepo.cs",
+              "RelativeToolTip": "Repositories\\Interfaces\\ITransactionRepo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T11:53:46.641Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IContactRepo.cs",
+              "DocumentMoniker": "C:\\Users\\frank.addae\\RiderProjects\\Customer_Balance_Paltform\\Repositories\\Interfaces\\IContactRepo.cs",
+              "RelativeDocumentMoniker": "Repositories\\Interfaces\\IContactRepo.cs",
+              "ToolTip": "C:\\Users\\frank.addae\\RiderProjects\\Customer_Balance_Paltform\\Repositories\\Interfaces\\IContactRepo.cs",
+              "RelativeToolTip": "Repositories\\Interfaces\\IContactRepo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T11:53:30.992Z",
+              "EditorCaption": ""
             }
           ]
         }

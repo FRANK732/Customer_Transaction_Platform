@@ -22,6 +22,9 @@ public class CFPMapper : Profile
             .ForMember(dest => dest.TransactionType, opt => opt.MapFrom(src => src.TransactionType.ToString()));
         CreateMap<Transaction, TTransactions>().ReverseMap();
 
+        //UPdate Mapping
+        CreateMap<TCustomer, UpdateCustomer>().ReverseMap();
+
        
     }
 }
