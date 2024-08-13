@@ -61,7 +61,7 @@ public class TransactionRepo : ITransactionRepo
         transactionsQuery = transactionsQuery.Where(t => t.CustomerID == customerId);
 
 
-        // Applying date range filtering
+        // Date range filtering
         if (startDate.HasValue)
             transactionsQuery = transactionsQuery.Where(t => t.TransactionDate >= startDate.Value);
         
@@ -90,46 +90,48 @@ public class TransactionRepo : ITransactionRepo
 
     private async Task RecalculateBalances(int customerId)
     {
+        // Customer Details
+        var customer = await _context.Customers
+            .Where(d => d.CustomerID == customerId)
+            .FirstOrDefaultAsync();
+
+        if (customer == null)
+        {
+            throw new ArgumentException($"Customer with ID {customerId} not found.");
+        }
+        
+        var balance = customer.CurrentBalance;
+
+        // Customer Transaction in Date order
         var transactions = await _context.Transactions
             .Where(t => t.CustomerID == customerId)
             .OrderBy(t => t.TransactionDate)
             .ToListAsync();
 
-        var customer = await _context.Customers
-            .Where(d => d.CustomerID == customerId)
-            .FirstOrDefaultAsync();
-
-        if (customer != null)
+        foreach (var transaction in transactions)
         {
-            decimal balance = 0;
-
-            foreach (var transaction in transactions)
+            if (transaction.TransactionType == TransactionType.Invoice.ToString())
             {
-                if (transaction.TransactionType == TransactionType.Invoice.ToString())
-                {
-                    balance += transaction.Amount; // Debit (Increase balance)
-                    transaction.Debit = transaction.Amount;
-                    transaction.Credit = 0;
-                }
-                else if (transaction.TransactionType == TransactionType.Payment.ToString())
-                {
-                    balance -= transaction.Amount; // Credit (Decrease balance)
-                    transaction.Credit = transaction.Amount;
-                    transaction.Debit = 0;
-                }
-
-                transaction.Balance = balance;
+                balance += transaction.Amount;
+                transaction.Debit = transaction.Amount;
+                transaction.Credit = 0;
+            }
+            else if (transaction.TransactionType == TransactionType.Payment.ToString())
+            {
+                balance -= transaction.Amount;
+                transaction.Credit = transaction.Amount;
+                transaction.Debit = 0;
             }
 
-            customer.CurrentBalance += balance;
-
-            _context.Transactions.UpdateRange(transactions);
-            
-            Console.WriteLine($"Final calculated balance for customer {customerId}: {balance}");
-             _context.Customers.UpdateRange(customer);
-
-            await _context.SaveChangesAsync();
+            transaction.Balance = balance;
         }
+
+        customer.CurrentBalance = balance;
+
+        _context.Transactions.UpdateRange(transactions);
+        _context.Customers.Update(customer);
+
+        await _context.SaveChangesAsync();
     }
 
 }

@@ -66,7 +66,7 @@ public class CFPContrller : ControllerBase
     }
 
     [HttpPost]
-    public async Task<IActionResult> CreateTransaction([FromBody] Transaction rTransaction)
+    public async Task<IActionResult> CreateTransaction([FromBody] Transaction? rTransaction)
     {
         try
         {
